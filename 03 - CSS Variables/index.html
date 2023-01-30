@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Scoped CSS Variables and JS</title>
-  <link rel="icon" href="https://fav.farm/✅" />
+  <link rel="icon" href="https://fav.farm/🔥" />
 </head>
 <body>
   <h2>Update CSS Variables with <span class='hl'>JS</span></h2>
@@ -34,7 +34,7 @@
       filter: blur(var(--blur));
     }
 
-    .hl {
+    .h1 {
       color: var(--base);
     }
 
@@ -60,18 +60,17 @@
     }
   </style>
 
-  <script>
-    const inputs = document.querySelectorAll('.controls input');
+  <script> 
+  const inputs = document.querySelectorAll(".controls input");
 
-    function handleUpdate() {
-      const suffix = this.dataset.sizing || '';
-      document.documentElement.style.setProperty(`--${this.name}`, this.value + suffix);
-    }
+  function handleUpdate() {
+    const suffix = this.dataset.sizing || '';
+    document.documentElement.style.setProperty(`--${this.name}`, this.value + suffix);
+  }
 
-    inputs.forEach(input => input.addEventListener('change', handleUpdate));
-    inputs.forEach(input => input.addEventListener('mousemove', handleUpdate));
+  inputs.forEach(input => input.addEventListener('change', handleUpdate));
+  inputs.forEach(input => input.addEventListener('mousemove', handleUpdate));
   </script>
-
 
 </body>
 </html>
